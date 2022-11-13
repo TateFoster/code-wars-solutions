@@ -1,5 +1,8 @@
 function validBraces(braces) {
-	//TODO
+	const parenthisCount = braces.match(
+		/\b(\([a-zA-Z0-9\+-_\{\}\(\)\\\/,.;:'"\[\]]*\))\b/g
+	);
+	return parenthisCount;
 }
 
 console.log(validBraces("()") + " () This should be true");

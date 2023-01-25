@@ -1,6 +1,6 @@
 function validBraces(braces) {
 	const parenthisCount = braces.match(
-		/\b(\([a-zA-Z0-9\+-_\{\}\(\)\\\/,.;:'"\[\]]*\))\b/g
+		/\([a-zA-Z0-9\+-_\{\}\(\)\\\/,.;:'"\[\]]*\)/g
 	);
 	return parenthisCount;
 }

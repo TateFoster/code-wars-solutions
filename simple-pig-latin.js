@@ -3,7 +3,7 @@ function pigIt(str) {
 	let words = str.split(" ");
 	const newWords = [];
 	for (let word of words) {
-		if (word == /[.,\/#!$%&\^\*;:{}=\-_`~()]/) {
+		if (word.match(/[.,\/#!?<>\'\"\[\]$%&\^\*;:{}=\-_`~()\\]/)) {
 			newWords.push(word);
 		} else {
 			let splitWord = word.split("");
